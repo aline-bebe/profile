@@ -7,8 +7,10 @@ export class User {
 
 
     constructor(
-      public user: any,
+      public login: string,
       public repos: any,
-      public userName: string
+      public userName: string,
+   
+      public avatar_url: string,
   ) { }
 }
