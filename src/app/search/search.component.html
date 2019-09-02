@@ -1,6 +1,30 @@
 
 <div class="jumbotron text-center">
+    <!-- <div>
+        <input type="text" [(ngModel)]="username"  placeholder="Search.." title="Type in a category"><button (click)="search()" class="btn btn-primary">Search</button>
+      </div> -->
+        
+  <div class="container-fluid">
     <div>
-        <input type="text" id="mySearch"  placeholder="Search.." title="Type in a category"><button class="btn btn-primary">Search</button>
+      
+        <input type="text" [(ngModel)]="username" >
+        <button (click)="search()" class="btn btn-primary">search</button>
+      </div><br>
+    <div class="row">
+      <div  class="col-sm-6" >
+        <img src="{{answer.avatar_url}}" alt="">
       </div>
+      <div class="well">
+      <div  *ngIf ="answer" class="col-sm-6" id="identity">
+       
+        <h5 class="hello">Login:{{answer?.login}}</h5>
+        <h5 class="hello">Name:{{ answer?.name}}</h5>
+        <h5 class="hello">Bio:{{ answer?. bio}}</h5>
+        <h5 class="hello">Location:{{ answer?.location}}</h5>
+        <h5 class="hello">Created:{{ answer?.created_at|date}}</h5>
+        <a href="{{answer.html_url}}" target="_blank"><button class="list-group-item list-group-item-action active">View them in profile</button></a>
+      </div>
+    </div>
+   </div>      
+  </div>
   </div>
