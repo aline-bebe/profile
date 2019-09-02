@@ -7,8 +7,8 @@ import { RepoHttpService } from '../repo-http/repo-http.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  username:string; 
- answer:any;
+  username:string;
+  github:any;
  repos:any;
 //  public githubUser:string;
   constructor(private http:HttpClient, private repoService:RepoHttpService) { }
@@ -17,9 +17,9 @@ export class SearchComponent implements OnInit {
   }
   search(){
     // this service.GitRequest
-  this.http.get('https://api.github.com/users/'+ this.username +"?access_token=4a5502cd664dd7cb15b98c867b5685845dabf573").subscribe((answer)=> {
+  this.http.get('https://api.github.com/users/'+ this.username +"?access_token=4a5502cd664dd7cb15b98c867b5685845dabf573").subscribe((github)=> {
   
-  this.answer=answer;
+  this.github=github;
   })
   }
 }
