@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { RepoHttpService } from '../repo-http/repo-http.service';
+// import { RepoHttpService } from '../repo-http/repo-http.service';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -11,7 +11,7 @@ export class SearchComponent implements OnInit {
   github:any;
  repos:any;
 //  public githubUser:string;
-  constructor(private http:HttpClient, private repoService:RepoHttpService) { }
+  constructor(private http:HttpClient, ) { }
 
   ngOnInit() {
   }

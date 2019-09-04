@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../user';
 import { HttpClient } from '@angular/common/http';
-import { RepoHttpService } from '../repo-http/repo-http.service';
+// import { RepoHttpService } from '../repo-http/repo-http.service';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -16,7 +16,7 @@ export class ProfileComponent implements OnInit {
 
   user:User;
   
- constructor(private http:HttpClient, private repoService:RepoHttpService){
+ constructor(private http:HttpClient, ){
   
  }
 
@@ -34,8 +34,8 @@ export class ProfileComponent implements OnInit {
     //   this.user = new User(data.login, data.name, data.email,  data.avatar_url)
     // })
  
-    this.repoService.repohttp()
-    this.user = this.repoService.user
+    // this.repoService.repohttp()
+    // this.user = this.repoService.user
   }
 
 
