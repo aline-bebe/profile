@@ -1,3 +1,28 @@
+## Author
+this is Aline Ingabire, Am the own who developed this site.
+## DESCRIPTION
+### view profile
+this project will help people to search their reposotory name or user's reposotory.
+
+## TECHNOLOGY USED
+* find visual studio
+* ubuntu , terminal
+* downloading bootstrap  and then copy file of bootstrap which called bootstrap.min.css.
+* Angular cli
+* git clone
+* code .
+
+  
+## BDD
+ **Input**
+ once you want to view your reposotory on this website you will first click on view profile.
+
+ **Output**
+  The client will be able to search their reposotory information.
+  
+## PROJECT LINK
+    https://github.com/aline-bebe/profile
+
 # SearchRepo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
